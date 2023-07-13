@@ -2,7 +2,7 @@ from math import sqrt
 
 
 def factorize(num: int):
-    """Takes a positive integer and returns its factors as a list."""
+    """Takes a positive integer and returns its prime factors as a list."""
     factors = []
     x = 2
     while num > 1:
