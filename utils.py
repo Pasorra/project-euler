@@ -9,3 +9,12 @@ def factorize(num: int):
         else:
             x += 1
     return factors
+
+def is_palindrome(val: str):
+    val = str(val)
+    i = 0
+    for i in range(int(len(val))):
+        left = val[i]
+        right = val[len(val) - i - 1] 
+        if left != right: return False
+    return True
