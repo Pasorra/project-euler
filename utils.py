@@ -1,3 +1,6 @@
+from math import sqrt
+
+
 def factorize(num: int):
     """Takes a positive integer and returns its factors as a list."""
     factors = []
@@ -17,4 +20,10 @@ def is_palindrome(val: str):
         left = val[i]
         right = val[len(val) - i - 1] 
         if left != right: return False
+    return True
+
+def is_prime(num: int):
+    if num % 2 == 0 and num != 2: return False
+    for i in range(3, int(sqrt(num)) + 1, 2):
+        if num % i == 0: return False
     return True
