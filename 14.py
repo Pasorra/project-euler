@@ -10,7 +10,7 @@ def collatz(n, memo):
     else:
         val = collatz((3 * n) + 1, memo)
         memo[n] = val + 1
-        return val +     1
+        return val + 1
         
 
 longest_terms = 0
