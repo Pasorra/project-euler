@@ -1,3 +1,4 @@
+import numpy
 from math import sqrt
 
 
@@ -41,3 +42,12 @@ def is_prime(num: int):
         if num % i == 0:
             return False
     return True
+
+
+def sieve(n):
+    flags = numpy.ones(n, dtype=bool)
+    flags[0] = flags[1] = False
+    for i in range(2, n):
+        if flags[i]:
+            flags[i*i::i] = False
+    return set(numpy.flatnonzero(flags))
