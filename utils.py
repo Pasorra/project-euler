@@ -16,6 +16,9 @@ def factorize(num: int):
 
 
 def completely_factorize(num: int):
+    """Takes a positive integer and returns all its divisors including 1."""
+    if num < 0:
+        return []
     factors = []
     for i in range(1, (num // 2) + 1):
         if num % i == 0:
