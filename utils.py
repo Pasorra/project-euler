@@ -45,6 +45,9 @@ def is_prime(num: int):
 
 
 def sieve(n):
+    """
+    returns primes up to n (exclusive)
+    """
     flags = numpy.ones(n, dtype=bool)
     flags[0] = flags[1] = False
     for i in range(2, n):

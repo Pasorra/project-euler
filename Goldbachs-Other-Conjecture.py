@@ -1,4 +1,4 @@
-from utils import sieve, is_prime
+from utils import sieve
 
 n = 1000
 arr = []
