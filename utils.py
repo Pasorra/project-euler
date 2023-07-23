@@ -73,3 +73,12 @@ def count_prime_factors(num: int) -> int:
             x += 1
 
     return count + 1
+
+
+def reverse_num(num):
+    """Returns the reversed of a positive integer."""
+    new_num = 0
+    while num > 0:
+        new_num = (new_num * 10) + (num % 10)
+        num //= 10
+    return new_num
