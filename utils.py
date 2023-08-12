@@ -82,3 +82,12 @@ def reverse_num(num):
         new_num = (new_num * 10) + (num % 10)
         num //= 10
     return new_num
+
+
+def count_int_len(num):
+    """Returns the count of digits in a positive integer"""
+    i = 0
+    while num > 0:
+        num //= 10
+        i += 1
+    return i
