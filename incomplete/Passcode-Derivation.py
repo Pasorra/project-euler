@@ -1,4 +1,4 @@
-with open("0079_keylog.txt", "r") as f:
+with open("texts/0079_keylog.txt", "r") as f:
     data = [(x).strip("\n") for x in f.readlines()]
 
 chunks = [{}, {}, {}]

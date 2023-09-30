@@ -1,4 +1,4 @@
-with open("words.txt", "r") as f:
+with open("texts/0042_words.txt", "r") as f:
     words = [word.strip("\"") for word in f.readline().split(",")]
 
 memo = {}

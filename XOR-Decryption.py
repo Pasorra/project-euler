@@ -1,4 +1,4 @@
-with open("0059_cipher.txt", "r") as f:
+with open("texts/0059_cipher.txt", "r") as f:
     data = [int(x) for x in f.readline().split(",")]
 
 for key1 in range(97, 122 + 1):

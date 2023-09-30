@@ -1,4 +1,4 @@
-with open("names.txt", "r") as f:
+with open("texts/0022_names.txt", "r") as f:
     names = f.readlines()[0].split(",")
 
 
