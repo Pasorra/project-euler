@@ -47,13 +47,13 @@ def is_prime(num: int) -> bool:
     return True
 
 
-def sieve(n: int) -> set:
+def sieve(n: int) -> set[int]:
     """Returns a set of prime numbers up to 'n' (exclusive)."""
     flags = numpy.ones(n, dtype=bool)
     flags[0] = flags[1] = False
     for i in range(2, n):
         if flags[i]:
-            flags[i*i::i] = False
+            flags[i * i :: i] = False
     return set(numpy.flatnonzero(flags))
 
 
@@ -63,7 +63,7 @@ def count_prime_factors(num: int) -> int:
     count = 0
     x = 2
     counted = False
-    while x*x < num:
+    while x * x < num:
         if num % x == 0:
             count += 1 if not counted else 0
             counted = True
@@ -91,6 +91,7 @@ def count_int_len(num):
         num //= 10
         i += 1
     return i
+
 
 def gcd(a, b):
     if a == 0:
