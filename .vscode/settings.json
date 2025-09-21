@@ -15,4 +15,6 @@
     ],
     "cSpell.language": "en,en-GB,en-US",
     "python.analysis.autoImportCompletions": true,
+    "cursorpyright.analysis.autoImportCompletions": true,
+    "cursorpyright.analysis.typeCheckingMode": "basic",
 }
